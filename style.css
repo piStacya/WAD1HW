@@ -278,6 +278,11 @@ footer {
     background-color: #0056b3; /* Tumedam sinine hoveril */
 }
 
+
+/*.....................................................................................*/
+
+/* addPost page */
+
 .add-post-section {
     display: grid;
     justify-content: center;
@@ -289,16 +294,26 @@ footer {
 
 .add-post-form {
     display: grid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
 }
 
-.add-post-form label {
-    margin-bottom: 12px;
-}
-
-.add-post-form textarea {
-    margin-bottom: 8px;
-}
-
-.add-post-form input {
+.posttext {
+    display: flex;
+    column-gap: 10px;
     margin-bottom: 16px;
 }
+
+
+.submitbuttton {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.add-post-form button {
+    width: 50%;
+    justify-self: center;
+}
+

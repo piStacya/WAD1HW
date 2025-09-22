@@ -25,18 +25,24 @@
     <aside class="left-sidebar"></aside>
 
     <section class="add-post-section">
-      <h2>Create a New Post</h2>
       <form class="add-post-form">
         <!-- Post text -->
-        <label for="postText">Post body</label>
-        <textarea id="postText" name="postText" rows="4" placeholder="Write something..."></textarea>
-
+         <div class="posttext">
+          <label for="postText">Post body</label>
+          <textarea id="postText" name="postText" rows="4" placeholder="Write something..."></textarea>
+         </div>
+        
         <!-- Post image -->
+        <div class="posttext">
         <label for="postImage">Select file</label>
-        <input type="url" id="postImage" name="postImage" placeholder="https://example.com/image.jpg">
-
+        <button type="submit" class="submit-btn">Choose File</button>
+        </div>
+       
+        
         <!-- Submit -->
+         <div class="submitbuttton">
         <button type="submit" class="submit-btn">Submit post</button>
+         </div>
       </form>
     </section>
 
