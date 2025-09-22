@@ -202,3 +202,78 @@ footer {
     color: #007bff;
     font-weight: normal;
 }
+
+
+
+/*.....................................................................................*/
+
+/* Login page css */
+.background {
+    display: flex;
+    justify-content: center; /* keskele horisontaalselt */
+    align-items: flex-start; /* pane ülaossa, mitte täpselt keskele */
+    padding-top: 60px; /* kui palju kaugusele ülaservast */
+    min-height: calc(100vh - 240px); /* header + footer täpselt */
+    grid-template-columns: 200px 1fr 200px; /* Left sidebar (200px), Posts Feed (flexible), Right sidebar (200px) */
+    padding: 20px;
+    background-color: #f0f0f0; /* Background color for the main content area */
+}
+
+.loginform {
+    margin-top: 30px;
+    text-align: center;
+    background-color: #d3d3d3; /* Header background color */
+    border-radius: 8px;
+    padding: 25px 35px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    width: 280px;
+    max-width: 90%;
+    display: flex;
+    flex-direction: column;
+    gap: 4px; /* Vähendatud vahed elementide vahel veelgi (poole võrra) */
+    box-sizing: border-box;
+}
+
+.loginform .welcome-message {
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-bottom: 5px; /* Jätame selle siia, et welcome-sõnum oleks teistest veidi eraldi */
+}
+
+.loginform a {
+    color: #007bff; /* Sinine link */
+    text-decoration: none;
+}
+
+.loginform a:hover {
+    text-decoration: underline;
+}
+
+.loginform p {
+    margin: 0; /* Eemaldame vaikimisi marginaali P elementidel */
+}
+
+.loginform input[type="email"],
+.loginform input[type="password"] {
+    width: calc(100% - 5px);
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.loginform button[type="submit"] {
+    background-color: #007bff; /* Sinine nupp */
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 1em;
+    width: auto;
+    align-self: center;
+}
+
+.loginform button[type="submit"]:hover {
+    background-color: #0056b3; /* Tumedam sinine hoveril */
+}
