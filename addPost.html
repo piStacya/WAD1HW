@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Add Post</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="container">
+  <header>
+    <div class="header-left">
+      <a href="index.html" class="nav-item">Home</a>
+      <span class="nav-separator">|</span>
+      <a href="addPost.html" class="nav-item active">addPost</a>
+    </div>
+    <div class="header-right">
+      <a href="login.html" class="login-link" title="Login / Profile">
+        <img alt="login icon" width="50" height="50" src="https://www.pinclipart.com/picdir/big/200-2008697_account-customer-login-man-user-icon-login-icon.png">
+      </a>
+    </div>
+  </header>
+
+  <main id="mainContent">
+    <aside class="left-sidebar"></aside>
+
+    <section class="add-post-section">
+      <h2>Create a New Post</h2>
+      <form class="add-post-form">
+        <!-- Post text -->
+        <label for="postText">What's on your mind?</label>
+        <textarea id="postText" name="postText" rows="4" placeholder="Write something..."></textarea>
+
+        <!-- Post image -->
+        <label for="postImage">Image URL (optional)</label>
+        <input type="url" id="postImage" name="postImage" placeholder="https://example.com/image.jpg">
+
+        <!-- Post date -->
+        <label for="postDate">Date</label>
+        <input type="date" id="postDate" name="postDate">
+
+        <!-- Submit -->
+        <button type="submit" class="submit-btn">Post</button>
+      </form>
+    </section>
+
+    <aside class="right-sidebar"></aside>
+  </main>
+
+  <footer>
+    Footer
+  </footer>
+</div>
+</body>
+</html>
