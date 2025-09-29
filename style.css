@@ -357,3 +357,18 @@ footer {
         width: 100%;
     }
 }
+
+.posttext + .submitbutton {
+  margin-top: 10px;
+}
+
+.posttext ~ .submitbutton {
+  border-top: 0.1px solid #ccc;
+  padding-top: 10px;
+}
+
+.add-post-form > .posttext {
+    border-top: 0.01px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
