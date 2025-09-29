@@ -213,7 +213,6 @@ footer {
     justify-content: center; /* keskele horisontaalselt */
     align-items: flex-start; /* pane ülaossa, mitte täpselt keskele */
     padding-top: 60px; /* kui palju kaugusele ülaservast */
-    min-height: calc(100vh - 55vh); /* header + footer täpselt */
     grid-template-columns: 200px 1fr 200px; /* Left sidebar (200px), Posts Feed (flexible), Right sidebar (200px) */
     padding: 20px;
     background-color: #f0f0f0; /* Background color for the main content area */
@@ -221,6 +220,7 @@ footer {
 
 .loginform {
     margin-top: 30px;
+    margin-bottom: 30px;
     text-align: center;
     background-color: #d3d3d3; /* Header background color */
     border-radius: 8px;
@@ -277,3 +277,43 @@ footer {
 .loginform button[type="submit"]:hover {
     background-color: #0056b3; /* Tumedam sinine hoveril */
 }
+
+
+/*.....................................................................................*/
+
+/* addPost page */
+
+.add-post-section {
+    display: grid;
+    justify-content: center;
+    background-color: #ffffff;
+    border-radius: 15px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.add-post-form {
+    display: grid;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+}
+
+.posttext {
+    display: flex;
+    column-gap: 10px;
+    margin-bottom: 16px;
+}
+
+
+.submitbuttton {
+    display: flex;
+    justify-content: center;
+    margin-top: 14px;
+}
+
+.add-post-form button {
+    width: 50%;
+    justify-self: center;
+}
+
