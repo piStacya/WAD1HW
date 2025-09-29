@@ -25,26 +25,27 @@
     <aside class="left-sidebar"></aside>
 
     <section class="add-post-section">
-      <form class="add-post-form">
+      <form class="add-post-form" action="index.html" method="get">
         <!-- Post text -->
-         <div class="posttext">
-          <label for="postText">Post body</label>
-          <textarea id="postText" name="postText" rows="4" placeholder="Write something..."></textarea>
-         </div>
-        
-        <!-- Post image -->
-        <div class="posttext">
+      <div class="posttext">
+        <label for="postText">Post body</label>
+        <textarea id="postText" name="postText" rows="4" placeholder="Write something..." required></textarea>
+      </div>
+
+      <!-- Post image -->
+      <div class="posttext">
         <label for="postImage">Select file</label>
-        <button type="submit" class="submit-btn">Choose File</button>
-        </div>
-       
-        
-        <!-- Submit -->
-         <div class="submitbuttton">
+        <input type="file" id="postImage" name="postImage" required>
+      </div>
+
+      <!-- Submit -->
+      <div class="submitbutton">
         <button type="submit" class="submit-btn">Submit post</button>
-         </div>
-      </form>
-    </section>
+      </div>
+    </form>
+  </section>
+
+
 
     <aside class="right-sidebar"></aside>
   </main>
