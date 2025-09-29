@@ -294,36 +294,91 @@ footer {
 /* addPost page */
 
 .add-post-section {
-    display: grid;
-    justify-content: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: #ffffff;
     border-radius: 15px;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    padding: 20px;
+    max-width: 600px;
+    margin: 20px auto;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
+/* Form inside the section */
 .add-post-form {
-    display: grid;
-    padding-top: 30px;
-    padding-bottom: 30px;
-
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    gap: 16px;
 }
 
+/* Each post text or input row */
 .posttext {
     display: flex;
-    column-gap: 10px;
-    margin-bottom: 16px;
+    flex-direction: column; /* stack label + input vertically on small screens */
+    gap: 6px;
 }
 
+/* File input and textarea side by side on larger screens */
+@media (min-width: 600px) {
+    .posttext {
+        flex-direction: row;
+        align-items: center;
+    }
+    .posttext label {
+        width: 30%;
+        text-align: right;
+        margin-right: 10px;
+    }
+    .posttext textarea,
+    .posttext input[type="file"] {
+        width: 70%;
+    }
+}
 
-.submitbuttton {
+/* Submit button container */
+.submitbutton {
     display: flex;
     justify-content: center;
     margin-top: 14px;
 }
 
+/* Submit button styling */
 .add-post-form button {
     width: 50%;
-    justify-self: center;
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #007BFF;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
+/* Hover effect for button */
+.add-post-form button:hover {
+    background-color: #0056b3;
+}
+
+/* Mobile adjustments */
+@media (max-width: 599px) {
+    .add-post-form button {
+        width: 100%;
+    }
+}
+
+.posttext + .submitbutton {
+  margin-top: 10px;
+}
+
+.posttext ~ .submitbutton {
+  border-top: 0.1px solid #ccc;
+  padding-top: 10px;
+}
+
+.add-post-form > .posttext {
+    border-top: 0.01px solid #ccc;
+    padding: 10px;
+    border-radius: 8px;
+}
