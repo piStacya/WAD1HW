@@ -5,6 +5,18 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Social Media Feed Layout</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+      /* Hide sidebars on small screens and keep only the center content visible */
+      @media (max-width: 600px) {
+        #mainContent {
+          grid-template-columns: 1fr; /* Single column layout */
+        }
+        #mainContent .left-sidebar,
+        #mainContent .right-sidebar {
+          display: none; /* Hide sidebars */
+        }
+      }
+    </style>
 </head>
 <body>
 <div class="container">
