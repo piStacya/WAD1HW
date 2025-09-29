@@ -208,7 +208,7 @@ footer {
 /*.....................................................................................*/
 
 /* Login page css */
-.background {
+#background {
     display: flex;
     justify-content: center; /* keskele horisontaalselt */
     align-items: flex-start; /* pane ülaossa, mitte täpselt keskele */
@@ -278,6 +278,13 @@ footer {
     background-color: #0056b3; /* Tumedam sinine hoveril */
 }
 
+.loginform > b {
+    font-size: 20px;
+}
+
+.loginform + a {
+    font-size: 12px;
+}
 
 /*.....................................................................................*/
 
