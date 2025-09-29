@@ -213,7 +213,7 @@ footer {
     justify-content: center; /* keskele horisontaalselt */
     align-items: flex-start; /* pane ülaossa, mitte täpselt keskele */
     padding-top: 60px; /* kui palju kaugusele ülaservast */
-    min-height: calc(100vh - 240px); /* header + footer täpselt */
+    min-height: calc(100vh - 55vh); /* header + footer täpselt */
     grid-template-columns: 200px 1fr 200px; /* Left sidebar (200px), Posts Feed (flexible), Right sidebar (200px) */
     padding: 20px;
     background-color: #f0f0f0; /* Background color for the main content area */
